@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+
+  printPola(angkaPara, pangkatPara) {
+    let angka = angkaPara;
+    let pangkat = pangkatPara;
+    
+  }
 }

@@ -1,4 +1,9 @@
 <label> Angka
 <input [(ngModel)]="angka" type="text">
-<label>
-<input [(ngModel)]="angka" type="text">
+<br> <br/>
+<label> Pangkat
+<input [(ngModel)]="pangkat" type="text">
+<br> <br/>
+<label> Hasil
+<br> <br/>
+<button (click)="printPola(angka, pangkat)"> Print Pola </button>
