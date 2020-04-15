@@ -27,6 +27,12 @@ export class AppComponent  {
       this.output = this.print;
     }
     else {
+      if(pangkat <= angka) {
+        let temp = pangkat;
+        pangkat = angka;
+        angka = temp;
+      }
+
       let coPangkat = pangkat;
       this.print += "PolaA <br>";
       for(let i = 0, coAngka = 1; i < pangkat; i++, coPangkat--, coAngka++) {
