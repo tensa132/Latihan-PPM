@@ -1,12 +1,15 @@
 <label> Angka
-<input [(ngModel)]="angka" type="text">
+<!-- <input [(ngModel)]="angka" type="text" id="$1"> -->
+<input [(ngModel)]=angka type="text" id="$1">
 <br> <br/>
 <label> Pangkat
-<input [(ngModel)]="pangkat" type="text">
+<!-- <input [(ngModel)]="pangkat" type="text"> -->
+<input [(ngModel)]=pangkat type="text">
 <br> <br/>
 <label> Hasil = {{hasil}}
 <br> <br/>
-<button (click)="printPola(angka, pangkat)"> Print Pola </button>
-<button (click)="$1"> Clear </button>
+<!-- <button (click)="printPola(angka, pangkat)"> Print Pola </button> -->
+<button (click)="printPola()"> Print Pola </button>
+<button (click)="clearTextBox(angka, pangkat)"> Clear </button>
 <div [innerHTML]="output">
 </div>
